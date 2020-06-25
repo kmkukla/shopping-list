@@ -80,6 +80,7 @@ function deleteItem(e) {
   element.remove();
   if (groceryList.children.length <= 1) {
     clearBtn.classList.remove("grocery__clear-btn--show");
+    groceryListBackground.classList.remove("grocery__list-background--hide");
   }
   displayAlert(`Item removed`, "danger");
   setBackToDefault();
